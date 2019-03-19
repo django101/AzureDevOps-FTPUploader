@@ -101,6 +101,7 @@
 			{
 				if(!$Silent)
 				{
+					Write-Verbose "Error in Get-FTPItemTimestamp..." -Verbose
 					Write-Error $_.Exception.Message -ErrorAction Stop  
 				}	
 				Return -1

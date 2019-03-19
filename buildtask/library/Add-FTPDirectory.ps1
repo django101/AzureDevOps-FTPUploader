@@ -97,6 +97,7 @@
 			if ($SuppressErrors -eq $True) {
                 Write-Error $_.Exception.Message -ErrorAction SilentlyContinue
             } else {
+				Write-Verbose "Error in Add-FTPDirectory..." -Verbose
                 Write-Error $_.Exception.Message -ErrorAction Stop 
             }
 		}

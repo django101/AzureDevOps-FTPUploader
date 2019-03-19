@@ -156,23 +156,31 @@ $fileList = (Get-ChildItem -path "$sourcePath" -Recurse -Exclude $excludeArray |
 }
 
 
+Write-Verbose "Found " + $fileList.Count + " file(s)" 
 Write-Host "Uploading files..."
 # All files are uploaded.
 
+
 if ($ignoreUnchangedFiles -eq $true) {
     Write-Host "Ignoring unchanged files..."
+
     # All files are uploaded.
     foreach ($item in $fileList) { 
         $filename = $item.FullName.Substring($sourcePath.Length)
         $filename = [regex]::Replace($filename, '\\', '/')  
 
+        Write-Host "Uploading file... " + $filename
+        Write-Host "Remote path... " + $remotePath
+        Write-Host "Remote item... " + $item.FullName
+        
         # call for deployment files validation
         if ($deploymentFilesOnly -eq $true) {
-            if ((IsDeploymentFile($filename) -eq $false) {
+            if (IsDeploymentFile($filename) -eq $false) {
                 continue
             }
             else {
                 # call for changed files validation
+
                 if((HasChanges($remotePath + $item, $filename)) -eq $false) {
                     continue
                 }

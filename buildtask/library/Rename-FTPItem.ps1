@@ -107,6 +107,7 @@
 			}
 			Catch
 			{
+				Write-Verbose "Error in Rename-FTPItem..." -Verbose
 				Write-Error $_.Exception.Message -ErrorAction Stop 
 			}
 		}

@@ -63,6 +63,7 @@
 	        }
 	        Catch
 	        {
+						Write-Verbose "Error in Remove-FTPDirectory..." -Verbose
 		        Write-Error $_.Exception.Message -ErrorAction Stop 
 	        }
 
@@ -94,6 +95,7 @@
 	        }
 	        Catch
 	        {
+						Write-Verbose "Error in Remove-FTPDirectory_2..." -Verbose
 		        Write-Error $_.Exception.Message -ErrorAction Stop 
 	        }
 

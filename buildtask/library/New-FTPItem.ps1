@@ -101,6 +101,7 @@
 			Catch
 			{
 				$Error = $_.Exception.Message.Substring(($_.Exception.Message.IndexOf(":")+3),($_.Exception.Message.Length-($_.Exception.Message.IndexOf(":")+5)))
+				Write-Verbose "Error in New-FTPItem..." -Verbose
 				Write-Error $Error -ErrorAction Stop 
 			}
 		}

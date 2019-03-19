@@ -8,7 +8,7 @@
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 0 
+        "Patch": 6 
     },
     "groups": [
         {
@@ -79,10 +79,10 @@
         {
             "name": "compareFileContent",
             "type": "boolean",
-            "label": "Compares the actual content of the files",
+            "label": "Ignore files with the exact same content",
             "defaultValue": "false",
             "required": false,
-            "helpMarkDown": "Ignore files with the exact same content",
+            "helpMarkDown": "Compares the actual content of the files",
             "groupName": "advanced"
         },        
         {

@@ -122,6 +122,7 @@
 			}
 			Catch
 			{
+				Write-Verbose "Error in Set-FTPConnection..." -Verbose
 				Write-Error $_.Exception.Message -ErrorAction Stop 
 			}
 		}

@@ -238,6 +238,7 @@
 			}
 			Catch
 			{
+				Write-Verbose "Error in Get-FTPItem..." -Verbose
 				Write-Error $_.Exception.Message -ErrorAction Stop 
 			}
 		}
