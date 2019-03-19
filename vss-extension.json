@@ -1,0 +1,32 @@
+{
+    "manifestVersion": 1,
+    "id": "upload-via-ftp",
+    "publisher": "strateg-solutions",
+    "version": "1.0.0",
+    "name": "Upload via FTP",
+    "description": "For uploading files using FTP protocol.",
+    "public": false,
+    "categories": ["Azure Repos"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "upload-via-ftp",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildtask"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "buildtask"
+        }
+    ]
+}

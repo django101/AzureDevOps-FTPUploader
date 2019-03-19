@@ -1,0 +1,23 @@
+{
+  "name": "AzureDevOps-FTPUploader",
+  "version": "1.0.0",
+  "description": "Azure DevOps FTP Uploader - For uploading files using FTP protocol.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/django101/AzureDevOps-FTPUploader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/django101/AzureDevOps-FTPUploader/issues"
+  },
+  "homepage": "https://github.com/django101/AzureDevOps-FTPUploader#readme",
+  "dependencies": {
+    "vss-web-extension-sdk": "^5.141.0"
+  }
+}
