@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "upload-via-ftp",
-    "publisher": "strateg-solutions",
+    "publisher": "django101",
     "version": "1.0.0",
     "name": "Upload via FTP",
     "description": "For uploading files using FTP protocol.",
